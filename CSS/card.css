@@ -78,6 +78,9 @@ body {
     margin-left: 20%;
     margin-top: 12%;
 }
+fieldset {
+    border: none;
+}
 label {
     text-transform: uppercase;
     margin-top: 80px;
@@ -113,10 +116,6 @@ input::placeholder {
 #card-cvc {
     width: 55%;
 }
-small {
-    display: none;
-    color: var(--Red-input-errors);
-}
 #confirm {
     margin-top: 20px;
     width: 53%;
@@ -148,4 +147,18 @@ small {
 }
 .complete p {
     color: var(--Dark-grayish-violet);
+}
+
+@media only screen and (max-width: 768px) {
+    .left {
+        width: 30%;
+    }
+    .front-card {
+        left: 30%;
+        width: 75%
+    }
+    .card-back {
+        left: 50%;
+        width: 100%;
+    }
 }
