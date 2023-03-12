@@ -26,33 +26,38 @@ form.addEventListener("submit", function (event) {
 function Validation() {
   if (cardName.value == "") {
     //errorText.textContent = "You must fill this field"
-    //errorText.style.color = "red"
-    cardName.style.borderColor = "red";
-  } else if (cardNumber.value == "") {
-    //  errorText.textContent = "You must fill this field"
-    //  errorText.style.color = "red"
-    cardNumber.style.borderColor = "red";
-  } else if (expMonth.value == "") {
-    //errorText.textContent = "You must fill this field"
-    // errorText.style.color = "red"
-    expMonth.style.borderColor = "red";
-  } else if (expMonth.value.length > 2) {
-    expMonth.style.borderColor = "red";
-  } else if (expYear.value == "") {
+    //errorText.style.color = "hsl(0, 100%, 66%);"
+    cardName.style.borderColor = "hsl(0, 100%, 66%)";
+  }
+  if (cardNumber.value == "") {
+     // errorText.textContent = "You must fill this field"
+    //  errorText.style.color = "hsl(0, 100%, 66%);"
+    cardNumber.style.borderColor = "hsl(0, 100%, 66%)";
+  }
+  if (expMonth.value == "") {
     // errorText.textContent = "You must fill this field"
-    // errorText.style.color = "red"
-    expYear.style.borderColor = "red";
+    // errorText.style.color = "hsl(0, 100%, 66%);"
+    expMonth.style.borderColor = "hsl(0, 100%, 66%)";
+  } else if (expMonth.value.length > 2) {
+    expMonth.style.borderColor = "hsl(0, 100%, 66%)";
+  }
+  if (expYear.value == "") {
+    // errorText.textContent = "You must fill this field"
+    // errorText.style.color = "hsl(0, 100%, 66%);"
+    expYear.style.borderColor = "hsl(0, 100%, 66%)";
   } else if (expYear.value.length > 2) {
-    expYear.style.borderColor = "red";
-  } else if (cvc.value == "") {
+    expYear.style.borderColor = "hsl(0, 100%, 66%)";
+  }
+  if (cvc.value == "") {
     //errorText.textContent = "You must fill this field"
-    // errorText.style.color = "red"
-    cvc.style.borderColor = "red";
+    // errorText.style.color = "hsl(0, 100%, 66%);"
+    cvc.style.borderColor = "hsl(0, 100%, 66%)";
   } else if (cvc.value.length > 3) {
-    cvc.style.borderColor = "red";
-  } else {
-    inputing();
-    completing();
+    cvc.style.borderColor = "hsl(0, 100%, 66%)";
+  }
+  else {
+    inputing()
+    completing()
   }
 }
 function inputing() {
